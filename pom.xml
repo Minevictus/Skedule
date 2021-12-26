@@ -13,12 +13,12 @@
 
     <distributionManagement>
         <repository>
-            <id>deployment-okkero</id>
-            <url>http://nexus.okkero.com/repository/maven-releases/</url>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/Minevictus/Skedule</url>
         </repository>
         <snapshotRepository>
-            <id>deployment-okkero</id>
-            <url>http://nexus.okkero.com/repository/maven-snapshots/</url>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/Minevictus/Skedule</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -136,19 +136,6 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.jetbrains.dokka</groupId>
-                <artifactId>dokka-maven-plugin</artifactId>
-                <version>${dokka.version}</version>
-                <executions>
-                    <execution>
-                        <phase>pre-site</phase>
-                        <goals>
-                            <goal>dokka</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
